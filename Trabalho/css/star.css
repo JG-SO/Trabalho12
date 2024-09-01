@@ -1,0 +1,90 @@
+
+.cima{
+    width: max-content;
+    background-color: black;
+}
+.navbar{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+
+}
+.navbar a{
+    background-color: black;
+    float: left; /*Tem que ficar onde: esquerda*/
+    text-align: center; /**/
+    font-size: 17px;
+    padding: 10px 10px; /*Vertical, horizontal*/
+}
+.navbar a:visited{ /*Quando o link ja estiver sido visitado*/
+    color: white;
+}
+
+.navbar a:hover{ /*Navbar: quando passar em cima do link*/
+    background-color: rgb(37, 13, 13);
+    color: rgb(255, 8, 8);
+
+}
+.navbar a:active{ /*Navbar: o link ativo*/
+    background-color: rgb(15, 15, 15);
+    color: black
+}
+
+.list-personagem{
+    list-style: none;
+    padding: 0%;
+
+    margin-left: 19%; /*ta dando problema, pois quando se ve o app pelo celular ele vai mt para a direita*/
+
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+
+
+.personagem{
+    background-color: #313534;
+    border-radius: 2rem;
+    padding: 2rem;
+    list-style-type: none;
+}
+
+.personagem img{
+    height: 80px;
+}
+
+.personagem .number{
+    text-align: end;
+    font-size: 12px;
+    font-weight: 600;
+    color:aliceblue;
+    opacity: 40%;
+    padding: 0;
+
+}
+
+.personagem .name{
+    padding: 0;
+    margin: 0;
+}
+
+.personagem .detail{
+    display: flex;
+}
+
+.personagem .type{
+    font-size: 10px;
+    background-color: yellowgreen;
+    border-radius: 2rem;
+    padding: 3px;
+    margin: 3px 3px 3px 0;
+}
+
+
+
+@media screen and (min-width: 600px){
+    .lista-personagem{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
